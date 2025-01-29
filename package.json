@@ -1,0 +1,16 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "homepage": "https://SHASHANK-66/Shashanksb",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix blog\" \"npm run start --prefix Backend\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "dependencies": {
+    "my-app": "file:"
+  }
+}
